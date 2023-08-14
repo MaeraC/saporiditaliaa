@@ -1,0 +1,387 @@
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(-100%);
+    }
+    55% {
+      transform: translateX(-100%);
+    }
+    60% {
+      transform: translateX(-200%);
+    }
+    85% {
+      transform: translateX(-200%);
+    }
+    90% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+}
+h1 , h2 , h3 {
+    font-family: 'Dancing Script', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.title span {
+    width: 150px;
+    height: 2px;
+    background-color: #b88e40;
+}
+.title h1 {
+    font-size: 50px;
+    margin: 0 20px;
+    font-weight: 100;
+    color: #b88e40;
+}
+
+
+
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 17vh;
+    border-bottom: 1px solid #b88e40;
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+nav h1 {
+    font-weight: normal;
+    
+}
+nav .title h1 {
+    font-size: 35px;
+}
+nav .title span {
+    height: 1px;
+}
+nav .title {
+    margin-bottom: 0;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    margin: 0 30px;
+}
+nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+
+
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 83vh;
+    overflow: hidden;
+} 
+.carousel {
+    display: flex;
+    width: 400%; 
+    animation: slide 20s infinite linear;
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000006c;
+}
+header .text h1 {
+    font-size: 100px;
+    font-weight: normal;
+} 
+header .text h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    margin-top: 20px; 
+    font-size: 35px;
+}
+
+
+
+
+
+.concept {
+    background-color: #ede3d4;
+    display: flex;
+    color: #b88e40;
+}
+.concept img {
+    margin: 40px 5%;
+    margin-left: 10%;
+}
+.concept .text {
+    margin: 40px 5%;
+    margin-right: 10%;
+    text-align: center;
+}
+.concept p {
+    line-height: 30px;
+    font-size: 17px;
+}
+  
+
+
+
+
+
+
+.menu {
+    margin-top: 40px;
+}
+.menu h1 {
+    color: #b88e40;
+}
+.menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu ul {
+    display: flex;
+}
+.menu li {
+    width: 25%;
+    height: 500px;
+    position: relative;
+}
+.menu h3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #0000009a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    transition: 0.8s ease-in-out;
+}
+.menu h3:hover {
+    color: transparent;
+    background: transparent;
+}
+
+
+
+
+
+
+.testimonials {
+    padding: 80px 20px;
+    background-color: #ede3d4;
+}
+.testimonial-container {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial {
+    color: black;
+    display: none;
+    width: 50%;
+}
+.testimonial.active {
+    display: block;
+}
+.testimonial-container button {
+    background-color: #8080801d;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.testimonial-container  button:hover {
+    background-color: #80808059;
+}
+.testimonial .p {
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-style: italic;
+}
+.testimonial .n {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.formulaire {
+    padding:  40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    border: 1px solid #b88e40;
+    padding: 20px;
+    width: 35%;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+form input {
+    height: 40px;
+    background: none;
+    border: #b88e4061 1px solid;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+form label {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+form button {
+    width: 100%;
+    height: 40px;
+    background-color: #b88e40;
+    outline: none;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+
+.contact {
+    background-color: #ede3d4;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+.contact img {
+    width: 30%;
+    margin-right: 50px;
+}
+.contact .container ul {
+    color: #b88e40;
+    font-size: 22px;
+}
+.contact .container ul li {
+    margin-bottom: 20px;
+}
+.contact i {
+    color: #b88e40;
+    margin-right: 15px;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    font-weight: 100;
+}
+footer h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer .text {
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #b88e40;
+}
+footer i {
+    margin-right: 10px;
+}
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
