@@ -18,18 +18,19 @@
             <span></span>
         </div>
         <ul>
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Carte</a></li>
-            <li><a href="">Galerie</a></li>
-            <li><a href="">Réservations</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#cartes">Cartes</a></li>
+            <li><a href="#avis">Avis</a></li>
+            <li><a href="#reservation">Réservation</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header>
         <div class="carousel-container">
             <div class="carousel">
-              <img src="assets/slide1.jpg" alt="Image 1">
+              <img class="appear" src="assets/slide1.jpg" alt="Image 1">
               <img src="assets/slide2.jpg" alt="Image 2">
               <img src="assets/slide3.jpg" alt="Image 3">
               <img src="assets/slide4.jpg" alt="Image 4">
@@ -41,15 +42,15 @@
         </div>
     </header>
 
-    <section class="concept">
+    <section class="concept" id="concept">
         <img src="assets/vin.png" alt="bouteille de vin" />
         <div class="text">
-            <div class="title">
+            <div class="title appear" data-delai="200">
                 <span></span>
                 <h1>Notre concept</h1>
                 <span></span>
             </div>
-            <p>
+            <p class="appear" data-delai="400">
                 Bienvenue au restaurant Sapori d'Italia, un établissement de renom dédié à l'art culinaire italien. Nous sommes ravis de vous présenter notre sélection de plats inspirés de la cuisine italienne authentique, mettant en avant des ingrédients de la plus haute qualité, soigneusement choisis auprès des producteurs les plus réputés du pays. <br></br>
                 Notre chef talentueux œuvre sans relâche pour créer des plats délicieux et raffinés qui célèbrent la richesse de la cuisine italienne. Des pâtes fraîches faites maison, aux risothrefs crémeux et aux pizzas gourmandes, chaque bouchée est une expérience gastronomique mémorable qui évoque les saveurs ensoleillées de l'Italie. <br></br>
                 Notre ambiance chaleureuse et notre décor à l'italienne vous offrent un cadre idéal pour des dîners romantiques, des moments de célébration spéciale ou hrefut simplement pour une soirée agréable entre amis. Nous sommes impatients de vous faire découvrir notre passion pour la cuisine italienne authentique et de vous offrir une expérience culinaire exceptionnelle. <br></br>
@@ -58,7 +59,7 @@
         </div>
     </section>
 
-    <section class="menu">
+    <section class="menu"  id="cartes">
         <div class="title">
             <span></span>
             <h1>Nos cartes</h1>
@@ -66,25 +67,25 @@
         </div>
 
         <ul>
-            <li>
+            <li class="appear" data-delai="100">
                 <a href="">
                     <img src="assets/entree.jpg" alt="Entrées"/>
                     <h3>Entrées</h3>
                 </a>
             </li>
-            <li>
+            <li class="appear" data-delai="300">
                 <a href="">
                     <img src="assets/plat.jpg" alt="Plats"/>
                     <h3>Plats</h3>
                 </a>
             </li>
-            <li>
+            <li class="appear" data-delai="500">
                 <a href="">
                     <img src="assets/dessert.jpg" alt="Desserts"/>
                     <h3>Desserts</h3>
                 </a>
             </li>
-            <li>
+            <li class="appear" data-delai="700">
                 <a href="">
                     <img src="assets/boisson.jpg" alt="Boissons"/>
                     <h3>Boissons</h3>
@@ -93,14 +94,14 @@
         </ul>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials"  id="avis">
         <div class="title">
             <span></span>
             <h1>Nos avis client</h1>
             <span></span>
         </div>
         <div class="testimonial-container">
-            <div class="testimonial active">
+            <div class="testimonial active appear">
               <p class="p">"Un grand merci au Sapori d'Italia pour cette expérience culinaire inoubliable. Les Lasagnes étaient à tomber par terre, chaque couche débordant de saveurs authentiques. L'attention portée aux détails dans chaque plat est évidente, et le service était impeccable. C'est certainement devenu mon endroit préféré pour les dîners en famille."</p>
               <p class="n">- Marie D.</p>
             </div>
@@ -123,7 +124,7 @@
           </div>
     </section>
 
-    <section class="formulaire">
+    <section class="formulaire"  id="reservation">
         <div class="title">
             <span></span>
             <h1>Réservation</h1>
@@ -144,7 +145,7 @@
         </form>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
             <img src="assets/map.png" alt="" />
             <div class="container">
                 <div class="title">
@@ -164,11 +165,10 @@
         <ul>
             <h2>Sapori d'Italia</h2>
             <li class="text">Restaurant et cuisine italienne</li>
-            <li>
-                <img src="" alt="facebook" />
-                <img src="" alt="instagram" />
-                <img src="" alt="whatsapp" />
-                <img src="" alt="" />
+            <li class="social">
+                <img src="assets/fb.png" alt="facebook" />
+                <img src="assets/ig.png" alt="instagram" />
+                <img src="assets/tw.png" alt="twitter" />
             </li>
         </ul>
         <ul>
@@ -191,5 +191,6 @@
 
 
     <script src="js/testimonials.js"></script>
+    <script src="js/fadeAnim.js"></script>
 </body>
 </html>
