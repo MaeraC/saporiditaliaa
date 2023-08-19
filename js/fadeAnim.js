@@ -7,9 +7,9 @@ function handleScroll() {
         const distanceFromTop = card.offsetTop;
         const delaiAnim = card.getAttribute("data-delai")
 
-        if (scrolledFromTop >= distanceFromTop + 50) {
+        if (scrolledFromTop >= distanceFromTop + 150) {
             setTimeout(() => {
-                card.style.top = "0"
+              //  card.style.top = "0"
                 card.style.opacity = "1"
             
             }, delaiAnim)

@@ -36,8 +36,6 @@
     box-sizing: border-box;
 }
 body {
-    background-color: black;
-    color: white;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     scroll-behavior: smooth;
@@ -47,6 +45,11 @@ h1 , h2 , h3 {
 }
 a {
     text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+a:hover {
+    color: #a40707;
 }
 ul {
     list-style: none;
@@ -60,13 +63,13 @@ ul {
 .title span {
     width: 150px;
     height: 2px;
-    background-color: #b88e40;
+    background-color: #a40707;
 }
 .title h1 {
     font-size: 50px;
     margin: 0 20px;
-    font-weight: 100;
-    color: #b88e40;
+    font-weight: normal;
+    color: #a40707;
 }
 
 
@@ -76,24 +79,19 @@ ul {
 
 nav {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 17vh;
-    border-bottom: 1px solid #b88e40;
-    position: relative;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
     z-index: 10;
-    padding: 10px;
+    background: white;
 }
 nav h1 {
-    font-weight: normal;
-    
+    font-size: 35px;
 }
 nav .title h1 {
     font-size: 35px;
-}
-nav .title span {
-    height: 1px;
 }
 nav .title {
     margin-bottom: 0;
@@ -102,45 +100,35 @@ nav ul {
     display: flex;
 }
 nav ul li {
-    margin: 0 30px;
-}
-nav ul li a {
-    color: white;
+    margin: 0 40px;
     text-transform: uppercase;
-    font-weight: 100;
-    font-size: 16px;
+    font-size: 17px;
     transition: 0.5s;
 }
-nav ul li a:hover {
-    color: #b88e40;
+.res-btn {
+    background-color: #a40707;
+    color: #a40707;
+    border-radius: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+    transition: 0.5s;
 }
-.appear {
-    opacity: 0;
-    position: relative;
-    top: 50px;
-    transition: opacity 1s;
+.res-btn:hover {
+    background: #114232;
+    color: white;
 }
 
 
 
 
 
-.carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 83vh;
-    overflow: hidden;
-} 
-.carousel {
-    display: flex;
-    width: 400%; 
-    animation: slide 40s infinite linear;
-}
-.carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+
+header {
+    height: 100vh;
+    background: url(assets/slide4.jpg) no-repeat fixed;
+    background-size: cover;
 }
 header .text {
     position: absolute;
@@ -153,11 +141,11 @@ header .text {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0000006c;
+    background-color: #00000094;
+    color: white;
 }
 header .text h1 {
     font-size: 100px;
-    font-weight: normal;
 } 
 header .text h2 {
     font-family: "Roboto", sans-serif;
@@ -165,30 +153,60 @@ header .text h2 {
     margin-top: 20px; 
     font-size: 35px;
 }
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
 
 
 .concept {
-    background-color: #ede3d4;
+    padding: 60px 100px;
+}
+.concept .content {
     display: flex;
-    color: #b88e40;
+    justify-content: space-around;
 }
 .concept img {
-    margin: 40px 5%;
-    margin-left: 10%;
-}
-.concept .text {
-    margin: 40px 5%;
-    margin-right: 10%;
-    text-align: center;
+    width: 50%;
+    object-fit: cover;
 }
 .concept p {
+    width: 50%;
+    padding: 40px;
     line-height: 30px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
+
+
+
+
+
+
+.atouts {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+.atouts div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.atouts img {
+    border: #114232 solid 2px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.atouts p {
+    font-size: 16px;
+    text-transform: uppercase;
+}
   
 
 
@@ -196,12 +214,48 @@ header .text h2 {
 
 
 
-.menu {
-    margin-top: 40px;
+.carte {
+    height: 350px;
+    background: url(assets/slide5.jpg) no-repeat;
+    background-size: cover;
+    background-position: top  left ;
+    position: relative;
 }
-.menu h1 {
-    color: #b88e40;
+.carte div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000018;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
 }
+.carte p {
+    font-family: "Dancing Script";
+    font-size: 32px;
+    line-height: 50px;
+    width: 30%;
+    text-align: center;
+}
+.carte a {
+    background-color: #a40707;
+    color: #a40707;
+    border-radius: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
 .menu img {
     width: 100%;
     height: 100%;
@@ -221,7 +275,7 @@ header .text h2 {
     height: 100%;
     top: 0;
     left: 0;
-    background: #0000009a;
+    background: #00000092;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,9 +295,25 @@ header .text h2 {
 
 
 
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.images img {
+    width: 48%;
+    height: 450px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+
+
+
+
+
 .testimonials {
     padding: 80px 20px;
-    background-color: #ede3d4;
 }
 .testimonial-container {
     margin: 0 auto;
@@ -255,9 +325,11 @@ header .text h2 {
     justify-content: center;
 }
 .testimonial {
-    color: black;
     display: none;
     width: 50%;
+    padding: 60px 40px;
+    border: ridge 10px #114232;
+    box-shadow: 8px 8px 20px #00000056;
 }
 .testimonial.active {
     display: block;
@@ -275,7 +347,7 @@ header .text h2 {
 }
 .testimonial .p {
     margin-bottom: 20px;
-    line-height: 25px;
+    line-height: 30px;
     font-style: italic;
 }
 .testimonial .n {
@@ -289,43 +361,63 @@ header .text h2 {
 
 
 .formulaire {
-    padding:  40px 0;
+    display: flex;
+    background-color: #d7a851;
+}
+.formulaire .title h1 {
+    color: black;
+}
+.formulaire .title span  {
+    background-color: black;
+}
+.formulaire img {
+    width: 50%;
+    object-fit: cover;
+}
+.formulaire .content {
+    padding: 20px 0;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 form {
-    border: 1px solid #b88e40;
-    padding: 20px;
-    width: 35%;
+    padding: 30px;
+    border: white 2px solid ;
+    width: 60%;
+    background-color: #282624;
 }
 form div {
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
 }
 form input {
     height: 40px;
-    background: none;
-    border: #b88e4061 1px solid;
-    margin-bottom: 20px;
+    border: white 2px solid ;
+    margin-bottom: 30px;
     padding-left: 10px;
     font-size: 14px;
     outline: none;
     font-family: "Roboto", sans-serif;
+    background-color: #d7a851c5;
     letter-spacing: 1px;
 }
+form input::placeholder {
+    color: black;
+}
 form label {
-    color: grey;
+    color: white;
     font-size: 14px;
+    font-weight: 100;
     margin-bottom: 10px;
 }
 form button {
     width: 100%;
-    height: 40px;
-    background-color: #b88e40;
+    height: 45px;
+    background-color: #d7a851;
     outline: none;
+    border: 2px solid white;
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
@@ -340,35 +432,53 @@ form button {
 
 
 .contact {
-    background-color: #ede3d4;
-    padding: 80px 20px;
+    padding: 80px;
+}
+.contact .content {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.contact img {
-    width: 30%;
-    margin-right: 50px;
+.contact .item {
+    width: 25%;
+    height: 250px;
+    margin: 20px;
 }
-.contact .container ul {
-    color: #b88e40;
-    font-size: 20px;
+.contact ul {
+    border: #114232 2px solid;
+    color: #114232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.contact .container ul li {
+.contact ul li {
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.contact a {
+    font-weight: bold;
+    color: #a40707;
+}
+.contact .first {
     margin-bottom: 20px;
+    font-weight: bold;
 }
-.contact i {
-    color: #b88e40;
-    margin-right: 15px;
-}
+
+
 
 
 
 
 footer {
     display: flex;
-    justify-content: space-around;
-    margin: 30px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
     font-weight: 100;
+    background-color: #114232;
+    color: white;
 }
 footer h2 {
     font-size: 40px;
@@ -382,16 +492,6 @@ footer .text {
     text-align: center;
     margin-bottom: 20px;
 }
-footer h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #b88e40;
-}
-footer i {
-    margin-right: 10px;
-}
 footer ul li {
     margin-bottom: 10px;
     font-size: 14px;
@@ -404,4 +504,25 @@ footer .social {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+}
+footer .copy {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    background: black;
+}
+footer .copy li {
+    font-size: 13px;
+    margin: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+
+
+
+.appear {
+    opacity: 0;
+    transition: opacity 1s;
 }
