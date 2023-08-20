@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapori d'Italia</title>
+    <link rel="icon" href="../favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../index.css" />
+</head>
+<body>
+    <nav> 
+        <h1>Sapori d'Italia</h1>
+        <ul>
+            <li><a href="../index.html" data-item="accueil">Accueil</a></li>
+            <li><a href="menu.html" data-item="nos cartes">Nos cartes</a></li>
+            <li><a href="contact.html" data-item="contact">Contact</a></li>
+        </ul>
+        <button class="res-btn">Réservation</a>
+    </nav>
+
+    <section class="title-band">
+        <h2>Nous contacter</h2>
+    </section>
+
+    <div class="bg-black"></div>
+
+    <aside class="formulaire">
+        <i class="fas fa-times"></i>
+        <div class="content">
+            <div class="title appear">
+                <span></span>
+                <h1>Réservation</h1>
+                <span></span>
+            </div>
+            <form action="" class="form appear" data-delai="400">
+                <div>
+                    <input type="text" name="name" class="name" placeholder="Votre nom" />
+                    <input type="email" name="email" class="email" placeholder="Votre adresse e-mail" />
+                    <input type="tel" name="tel" class="tel" placeholder="Votre numéro de télephone" />
+                    <input type="number" name="number" class="number" placeholder="Nombre de personnes" />
+                    <label for="date">Date souhaitée :</label>
+                    <input type="date" name="date" class="date" />
+                    <label for="time">Heure d'arrivée :</label>
+                    <input type="time" name="time" class="time" />
+                </div>
+                <button type="submit">Réserver ma table</button>
+            </form>
+        </div>
+    </aside>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <ul class="horaire item appear" data-delai="400">
+                <li class="first">DU LUNDI AU SAMEDI</li>
+                <li>Déjeuner : 11h00 - 14h30</li>
+                <li>Dîner : 18h30 - 22h30</li>
+                <li>En livraison : <a href="">Uber Eats !</a></li>
+            </ul>
+            <img class="item appear" data-delai="600" src="../assets/map.png" alt="" />
+            <ul class="item appear" data-delai="800">
+                <li class="first">NOUS CONTACTER</li>
+                <li><i class="fas fa-map-pin"></i> 8 Place Vendôme 75010 PARIS</li>
+                <li><i class="fas fa-phone"></i>09 78 54 36 27</li>
+                <li><i class="fas fa-envelope"></i>contact@saporiditalia.fr</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <h2>Sapori d'Italia</h2>
+            <li class="text">Restaurant et cuisine italienne</li>
+            <li class="social">
+                <img src="../assets/fb.png" alt="facebook" />
+                <img src="../assets/ig.png" alt="instagram" />
+                <img src="../assets/tw.png" alt="twitter" />
+            </li>
+        </ul>
+        <ul class="copy">
+            <li>Politique de confidentialité</li>
+            <li>©️2020 - Sapori d'Italia - Tous droits réservés.</li>
+            
+            <li>Mentions légales</li>
+        </ul>
+    </footer>
+
+    <script src="../js/fadeAnim.js"></script>
+    <script src="../js/form.js"></script>
+</body>
+</html>

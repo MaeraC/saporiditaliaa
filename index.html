@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sapori d'Italia</title>
+    <link rel="icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -14,13 +15,11 @@
     <nav> 
         <h1>Sapori d'Italia</h1>
         <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#concept">Concept</a></li>
-            <li><a href="#cartes">Cartes</a></li>
-            <li><a href="#avis">Avis</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#accueil" data-item="accueil">Accueil</a></li>
+            <li><a href="pages/menu.html" data-item="nos cartes">Nos cartes</a></li>
+            <li><a href="pages/contact.html" data-item="contact">Contact</a></li>
         </ul>
-        <a class="res-btn" href="#reservation">Réservation</a>
+        <button class="res-btn">Réservation</button>
     </nav>
 
     <header>
@@ -43,7 +42,7 @@
     <section class="carte">
         <div>
             <p class="appear">Tous nos plats sont faits maison avec des produits frais,<br> et le tout à prix abordable !</p>
-        <a href="" class="appear">Voir nos cartes</a>
+            <a href="pages/menu.html" class="appear">Voir nos cartes</a>
         </div>
     </section>
 
@@ -66,48 +65,11 @@
         </div>
     </section>
 
-    <!--
-    <section class="menu"  id="cartes">
-        <div class="title appear">
-            <span></span>
-            <h1>Nos cartes</h1>
-            <span></span>
-        </div>
-
-        <ul>
-            <li class="appear" data-delai="100">
-                <a href="">
-                    <img src="assets/entree.jpg" alt="Entrées"/>
-                    <h3>Entrées</h3>
-                </a>
-            </li>
-            <li class="appear" data-delai="300">
-                <a href="">
-                    <img src="assets/plat.jpg" alt="Plats"/>
-                    <h3>Plats</h3>
-                </a>
-            </li>
-            <li class="appear" data-delai="500">
-                <a href="">
-                    <img src="assets/dessert.jpg" alt="Desserts"/>
-                    <h3>Desserts</h3>
-                </a>
-            </li>
-            <li class="appear" data-delai="700">
-                <a href="">
-                    <img src="assets/boisson.jpg" alt="Boissons"/>
-                    <h3>Boissons</h3>
-                </a>
-            </li>
-        </ul>
-    </section>
-    -->
-
     <section class="images">
         <img class="appear" data-delai="100" src="assets/plat4.jpg" alt="" />
         <img class="appear" data-delai="300" src="assets/plat2.jpg" alt="" />
-        <img class="appear" data-delai="500" src="assets/plat1.jpg" alt="" />
-        <img class="appear" data-delai="700" src="assets/plat3.jpg" alt="" />
+        <img class="appear" data-delai="100" src="assets/plat1.jpg" alt="" />
+        <img class="appear" data-delai="300" src="assets/plat3.jpg" alt="" />
     </section>
 
     <section class="testimonials"  id="avis">
@@ -141,52 +103,9 @@
     </section>
 
     <!--
-    <section class="formulaire"  id="reservation">
-        <img class="appear" src="assets/slide1.jpg" alt="" />
-        <div class="content">
-            <div class="title appear">
-                <span></span>
-                <h1>Réservation</h1>
-                <span></span>
-            </div>
-            <form action="" class="form appear" data-delai="400">
-                <div>
-                    <input type="text" name="name" class="name" placeholder="Votre nom" />
-                    <input type="email" name="email" class="email" placeholder="Votre adresse e-mail" />
-                    <input type="tel" name="tel" class="tel" placeholder="Votre numéro de télephone" />
-                    <input type="number" name="number" class="number" placeholder="Nombre de personnes" />
-                    <label for="date">Date souhaitée :</label>
-                    <input type="date" name="date" class="date" />
-                    <label for="time">Heure d'arrivée :</label>
-                    <input type="time" name="time" class="time" />
-                </div>
-                <button type="submit">Réserver ma table</button>
-            </form>
-        </div>
-    </section>
+
     
-    <section class="contact" id="contact">
-        <div class="title appear" data-delai="200">
-            <span></span>
-            <h1>Contact</h1>
-            <span></span>
-        </div>
-        <div class="content">
-            <ul class="horaire item appear" data-delai="400">
-                <li class="first">DU LUNDI AU SAMEDI</li>
-                <li>Déjeuner : 11h00 - 14h30</li>
-                <li>Dîner : 18h30 - 22h30</li>
-                <li>En livraison : <a href="">Uber Eats !</a></li>
-            </ul>
-            <img class="item appear" data-delai="600" src="assets/map.png" alt="" />
-            <ul class="item appear" data-delai="800">
-                <li class="first">NOUS CONTACTER</li>
-                <li><i class="fas fa-map-pin"></i> 8 Place Vendôme 75010 PARIS</li>
-                <li><i class="fas fa-phone"></i>09 78 54 36 27</li>
-                <li><i class="fas fa-envelope"></i>contact@saporiditalia.fr</li>
-            </ul>
-        </div>
-    </section>
+
     -->
 
     <footer>
