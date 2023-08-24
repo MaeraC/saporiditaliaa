@@ -13,14 +13,40 @@
 </head>
 <body>
     <nav> 
-        <h1>Sapori d'Italia</h1>
         <ul>
+            <img src="../assets/logo.png" alt="logo">
             <li><a href="../index.html" data-item="accueil">Accueil</a></li>
-            <li><a href="menu.html" data-item="nos cartes">Nos cartes</a></li>
-            <li><a href="contact.html" data-item="contact">Contact</a></li>
+            <span></span>
+            <li><a href="../pages/menu.html" data-item="cartes">cartes</a></li>
+            <span></span>
+            <li><a href="../pages/contact.html" data-item="contact">Contact</a></li>
         </ul>
         <button class="res-btn">Réservation</button>
     </nav>
+
+    <aside class="formulaire">
+        <i class="fas fa-times"></i>
+        <div class="content">
+            <div class="title appear">
+                <span></span>
+                <h1>Réservation</h1>
+                <span></span>
+            </div>
+            <form action="" class="form appear" data-delai="400">
+                <div>
+                    <input type="text" name="name" class="name" placeholder="Votre nom" />
+                    <input type="email" name="email" class="email" placeholder="Votre adresse e-mail" />
+                    <input type="tel" name="tel" class="tel" placeholder="Votre numéro de télephone" />
+                    <input type="number" name="number" class="number" placeholder="Nombre de personnes" />
+                    <label for="date">Date souhaitée :</label>
+                    <input type="date" name="date" class="date" />
+                    <label for="time">Heure d'arrivée :</label>
+                    <input type="time" name="time" class="time" />
+                </div>
+                <button type="submit">Réserver ma table</button>
+            </form>
+        </div>
+    </aside>
 
     <div class="menu-carte">
         <img src="../assets/desserts.a976679951d2cdf541de.png" alt="la carte des desserts" />
@@ -45,5 +71,7 @@
             <li>Mentions légales</li>
         </ul>
     </footer>
+
+    <script src="../js/form.js"></script>
 </body>
 </html>
