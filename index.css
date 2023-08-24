@@ -687,12 +687,43 @@ form button:hover {
     background-color: #000000b1;
     display: none;
 }
+@media screen and (max-width: 900px) {
+    .formulaire {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .formulaire {
+        width: 100%;
+    }
+}
 
 
 
 
 
-
+.title-band {
+    width: 100%;
+    height: 300px;
+    background: url(assets/slide4.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.title-band h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.33);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 100;
+    padding-top: 60px;
+}
 .contact {
     padding: 40px;
 }
@@ -706,6 +737,9 @@ form button:hover {
     height: 250px;
     margin: 20px;
 }
+.contact img {
+    object-fit: cover;
+}
 .contact ul {
     border: #114232 2px solid;
     color: #114232;
@@ -716,7 +750,6 @@ form button:hover {
 }
 .contact ul li {
     margin-bottom: 10px;
-    font-weight: 100;
 }
 .contact a {
     font-weight: bold;
@@ -725,6 +758,42 @@ form button:hover {
 .contact .first {
     margin-bottom: 20px;
     font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding: 40px 0;
+    }
+    .contact .item {
+        width: 30%;
+        font-size: 14px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .contact {
+        padding: 20px 0;
+    }
+    .contact .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .item {
+        width: 70%;
+        font-size: 15px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title-band h2 {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contact .item {
+        width: 90%;
+    }
 }
 
 
@@ -807,25 +876,3 @@ footer .copy li {
 
 
 
-.title-band {
-    width: 100%;
-    height: 300px;
-    background: url(assets/slide4.jpg) no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.title-band h2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.33);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 70px;
-    font-weight: 100;
-    padding-top: 60px;
-}
